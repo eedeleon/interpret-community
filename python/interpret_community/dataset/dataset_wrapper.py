@@ -8,9 +8,9 @@ import pandas as pd
 import scipy as sp
 import numpy as np
 
-from ..common.explanation_utils import _summarize_data, _generate_augmented_data
-from ..common.explanation_utils import module_logger
-from ..common.constants import Defaults
+from interpret_community.common.explanation_utils import _summarize_data, _generate_augmented_data
+from interpret_community.common.explanation_utils import module_logger
+from interpret_community.common.constants import Defaults
 from sklearn.base import TransformerMixin, BaseEstimator
 from pandas.api.types import is_datetime64_any_dtype as is_datetime
 

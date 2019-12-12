@@ -9,7 +9,7 @@ confidence in the model.
 """
 
 from .tabular_explainer import TabularExplainer
-from .preprocessing import add_preprocessing
+from .processing import add_preprocessing, add_postprocessing
 
 __all__ = ["TabularExplainer", "add_preprocessing"]
 

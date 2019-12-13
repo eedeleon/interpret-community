@@ -11,7 +11,7 @@ confidence in the model.
 from .tabular_explainer import TabularExplainer
 from .processing import add_preprocessing, add_postprocessing
 
-__all__ = ["TabularExplainer", "add_preprocessing"]
+__all__ = ["TabularExplainer", "add_preprocessing", "add_postprocessing"]
 
 # Setup logging infrustructure
 import logging

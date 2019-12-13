@@ -49,19 +49,6 @@ steps:
 
   - bash: |
       source activate interp
-      pip install --upgrade setuptools wheel twine
-      cd ./python
-      python setup.py bdist_wheel
-      cd ..
-    displayName: Create a wheel
-
-  - task: TwineAuthenticate@0
-    displayName: Configure twine authentication
-    inputs:
-      artifactFeeds: $(artifactFeed)
-
-  - bash: |
-      source activate interp
       cd ./python
       twine upload -r $(artifactFeed) --config-file $(PYPIRC_PATH) dist/*
       cd ..
